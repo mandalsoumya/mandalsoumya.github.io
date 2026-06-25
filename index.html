@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soumyadip Mandal — Data Engineer</title>
+<title>Soumyadip Mandal — Data Engineer & AI Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -308,6 +308,15 @@
   .award-title { font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
   .award-date { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); margin-bottom: 0.6rem; }
   .award-desc { font-size: 0.8rem; color: var(--slate); line-height: 1.5; }
+  .award-view-btn {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; position: relative; overflow: hidden;
+    padding: 7px 14px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.74rem;
+    color: var(--gold); background: transparent; border: 1px solid var(--border); border-radius: 6px;
+    text-decoration: none; cursor: pointer; transition: all 0.25s; z-index: 1;
+  }
+  .award-view-btn:hover { background: var(--gold-glow); border-color: var(--gold); box-shadow: 0 0 18px rgba(255,215,0,0.18); transform: translateY(-1px); }
+  .award-view-btn svg { width: 12px; height: 12px; transition: transform 0.25s; }
+  .award-view-btn:hover svg { transform: translate(2px, -2px); }
 
   .edu-card { background: var(--card); border: 1px solid var(--border2); border-radius: 12px; padding: 2rem; display: flex; gap: 2rem; align-items: flex-start; transition: all 0.3s; max-width: 680px; }
   .edu-card:hover { border-color: var(--cyan); box-shadow: 0 8px 40px rgba(0,212,255,0.08); }
@@ -459,7 +468,7 @@
       <div class="code-panel">
         <pre class="code-block"><code><span class="code-kw">class</span> <span class="code-cls">Soumyadip</span>:
     <span class="code-kw">def</span> <span class="code-fn">__init__</span>(<span class="code-kw">self</span>):
-        self.role     = <span class="code-str">"Data Engineer"</span>
+        self.roles    = [<span class="code-str">"Data Engineer"</span>, <span class="code-str">"AI Engineer"</span>]
         self.location = <span class="code-str">"Kolkata, India"</span>
         self.stack    = [<span class="code-str">"Python"</span>, <span class="code-str">"PySpark"</span>, <span class="code-str">"Azure"</span>]
         self.exp_yrs  = <span class="code-num">3</span>
@@ -517,7 +526,7 @@
       <div class="exp-item reveal">
         <div class="exp-meta">
           <div>
-            <div class="exp-role">Systems Engineer — Data Engineer</div>
+            <div class="exp-role">Systems Engineer — Data Engineer / AI Engineer</div>
             <div class="exp-company">Tata Consultancy Services (TCS)</div>
           </div>
           <div class="exp-date">Aug 2023 – Present</div>
@@ -692,11 +701,41 @@
     <h2 class="section-title reveal">Awards & Achievements</h2>
     <p class="section-sub reveal">Recognized multiple times for exceptional performance, innovation, and cross-functional impact at TCS.</p>
     <div class="awards-grid">
-      <div class="award-card reveal"><span class="award-emoji">🏆</span><div class="award-title">Best Team Award</div><div class="award-date">July 2025</div><div class="award-desc">Awarded for cross-functional collaboration and on-time project delivery.</div></div>
-      <div class="award-card reveal"><span class="award-emoji">⭐</span><div class="award-title">Technical Excellence Award</div><div class="award-date">February 2025</div><div class="award-desc">Client appreciation for exceptional performance and early delivery on a high-priority engagement.</div></div>
-      <div class="award-card reveal"><span class="award-emoji">💡</span><div class="award-title">Contextual Master Award</div><div class="award-date">October 2024</div><div class="award-desc">Recognized for proposing innovative solutions and delivering ahead of schedule.</div></div>
-      <div class="award-card reveal"><span class="award-emoji">🌟</span><div class="award-title">Star of The Month</div><div class="award-date">September 2024</div><div class="award-desc">Top contributor recognition across the organization at TCS.</div></div>
-      <div class="award-card reveal"><span class="award-emoji">🎓</span><div class="award-title">GATE Qualified — CSE</div><div class="award-date">2023</div><div class="award-desc">Score: 401 | AIR: 6923 — National-level engineering aptitude exam.</div></div>
+      <div class="award-card reveal">
+        <span class="award-emoji">🏆</span>
+        <div class="award-title">Best Team Award</div>
+        <div class="award-date">July 2025</div>
+        <div class="award-desc">Awarded for cross-functional collaboration and on-time project delivery.</div>
+        <a href="https://drive.google.com/file/d/1nGEhs1V8NisrI05fXSAV8Ji4iSlCGLz0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="award-view-btn">View Document<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+      <div class="award-card reveal">
+        <span class="award-emoji">⭐</span>
+        <div class="award-title">Technical Excellence Award</div>
+        <div class="award-date">February 2025</div>
+        <div class="award-desc">Client appreciation for exceptional performance and early delivery on a high-priority engagement.</div>
+        <a href="https://drive.google.com/file/d/1j0PTKuMQC7kr-TrnQJmgUwuQX7xpTzdI/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="award-view-btn">View Document<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+      <div class="award-card reveal">
+        <span class="award-emoji">💡</span>
+        <div class="award-title">Contextual Master Award</div>
+        <div class="award-date">October 2024</div>
+        <div class="award-desc">Recognized for proposing innovative solutions and delivering ahead of schedule.</div>
+        <a href="https://drive.google.com/file/d/14Zx1-sN02FR8OELJ1bvURnrPOUtuq1fU/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="award-view-btn">View Document<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+      <div class="award-card reveal">
+        <span class="award-emoji">🌟</span>
+        <div class="award-title">Star of The Month</div>
+        <div class="award-date">September 2024</div>
+        <div class="award-desc">Top contributor recognition across the organization at TCS.</div>
+        <a href="https://drive.google.com/file/d/1HU3ao_aI9XGd-w-KqH-oZym4fqc94VV1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="award-view-btn">View Document<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+      <div class="award-card reveal">
+        <span class="award-emoji">🎓</span>
+        <div class="award-title">GATE Qualified — CSE</div>
+        <div class="award-date">2023</div>
+        <div class="award-desc">Score: 401 | AIR: 6923 — National-level engineering aptitude exam.</div>
+        <a href="https://drive.google.com/file/d/1lXwmHUl-qbo6KEGZdAPvmff9zFiUU3m6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="award-view-btn">View Document<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
@@ -731,6 +770,7 @@
   <h2 class="section-title reveal" style="text-align:center;">Let's Build Together</h2>
   <div class="reveal" style="text-align:center; margin: 0 auto 1.8rem; display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
     <span style="font-family:'JetBrains Mono',monospace; font-size:0.78rem; padding:6px 16px; border-radius:20px; background:var(--cyan-glow); border:1px solid var(--border); color:var(--cyan);">Open to Data Engineering Roles</span>
+    <span style="font-family:'JetBrains Mono',monospace; font-size:0.78rem; padding:6px 16px; border-radius:20px; background:var(--cyan-glow); border:1px solid var(--border); color:var(--cyan);">AI Engineer</span>
     <span style="font-family:'JetBrains Mono',monospace; font-size:0.78rem; padding:6px 16px; border-radius:20px; background:var(--cyan-glow); border:1px solid var(--border); color:var(--cyan);">Python Developer</span>
     <span style="font-family:'JetBrains Mono',monospace; font-size:0.78rem; padding:6px 16px; border-radius:20px; background:var(--cyan-glow); border:1px solid var(--border); color:var(--cyan);">Associate / Senior Associate</span>
   </div>
@@ -761,7 +801,7 @@
 
 <footer>
   <span>© 2026 Soumyadip Mandal</span>
-  <span>Data Engineer · Cloud Native</span>
+  <span>Data Engineer · AI Engineer · Cloud Native</span>
   <span>Built with precision ⚡</span>
 </footer>
 
@@ -887,7 +927,7 @@ statNums.forEach((s,i) => { s.dataset.delay=i*150; statsIO.observe(s); });
 
 /* ===== Button ripple (works on all pointer types) ===== */
 (function initRipple() {
-  document.querySelectorAll('.btn-primary, .btn-outline, .exp-view-btn, .cert-view-btn, .exp-modal-close, .copy-email-btn, .back-to-top').forEach(btn => {
+  document.querySelectorAll('.btn-primary, .btn-outline, .exp-view-btn, .cert-view-btn, .award-view-btn, .exp-modal-close, .copy-email-btn, .back-to-top').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const rect = btn.getBoundingClientRect();
       const size = Math.max(rect.width, rect.height);
@@ -941,6 +981,7 @@ statNums.forEach((s,i) => { s.dataset.delay=i*150; statsIO.observe(s); });
   initTilt('.skill-card', 6);
   initTilt('.exp-card', 3.5);
   initTilt('.cert-card', 5);
+  initTilt('.award-card', 5);
 
   // Magnetic buttons
   function initMagnetic(selector, strength) {
@@ -958,14 +999,14 @@ statNums.forEach((s,i) => { s.dataset.delay=i*150; statsIO.observe(s); });
       });
     });
   }
-  initMagnetic('.btn-primary, .btn-outline, .exp-view-btn, .cert-view-btn', 0.22);
+  initMagnetic('.btn-primary, .btn-outline, .exp-view-btn, .cert-view-btn, .award-view-btn', 0.22);
 })();
 
 /* ===== Role rotator under hero name ===== */
 (function initRoleRotator() {
   const el = document.getElementById('roleTypeText');
   if (!el) return;
-  const roles = ['Data Engineer', 'Python Developer', 'Associate / Sr. Associate'];
+  const roles = ['Data Engineer', 'AI Engineer', 'Python Developer', 'Associate / Sr. Associate'];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduceMotion) { el.textContent = roles.join(' · '); return; }
   let ri = 0, ci = roles[0].length, deleting = false;
